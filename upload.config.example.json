@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:7001",
+  "token": "change-me",
+  "accountsPath": "C:/path/to/accounts.txt",
+  "logPath": "C:/path/to/log.txt",
+  "watchIntervalMs": 1000
+}

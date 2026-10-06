@@ -1,0 +1,16 @@
+{
+  "name": "yezi-upload-uploader",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "upload": "node upload-data.mjs",
+    "watch": "node upload-data.mjs --watch",
+    "tray": "powershell -NoProfile -ExecutionPolicy Bypass -File ./tray-launcher.ps1 -ConfigPath ./upload.config.json",
+    "startup:install": "powershell -NoProfile -ExecutionPolicy Bypass -File ./install-startup.ps1 -ConfigPath ./upload.config.json",
+    "startup:uninstall": "powershell -NoProfile -ExecutionPolicy Bypass -File ./uninstall-startup.ps1"
+  }
+}
